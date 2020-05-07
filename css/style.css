@@ -1,7 +1,21 @@
+html, body {
+    font-family: 'Work Sans', sans-serif;
+}
+
 .banner {
     background-color: #204051;
 }
 
 .header__text--green {
-    color: #45FFAF;
+    color: #39CBBC;
+}
+
+.matterhorn-black {
+    color: #4d4d4d;
+}
+
+.hr--green {
+    border: 1px solid #39CBBC;
+    width: 50px;
+    margin: 0 initial;
 }
