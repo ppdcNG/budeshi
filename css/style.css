@@ -10,7 +10,8 @@ html, body {
     color: #39CBBC;
 }
 
-.matterhorn-black {
+.matterhorn-black,
+.navbar-brand {
     color: #4d4d4d;
 }
 
@@ -18,4 +19,8 @@ html, body {
     border: 1px solid #39CBBC;
     width: 50px;
     margin: 0 initial;
+}
+
+.navbar-nav * a.nav-link {
+    color: #4d4d4d !important;
 }
