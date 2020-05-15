@@ -20,6 +20,12 @@
   <!-- font -->
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 
+  <style>
+    .footer--logo {
+      width: 10rem;
+    }
+  </style>
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -28,28 +34,28 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-<nav class="mb-1 navbar navbar-expand-lg white text-dark">
-  <a class="navbar-brand text-uppercase" href="#">budeshi</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-    aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">About Us
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./views/projects.html">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+  <nav class="mb-1 navbar navbar-expand-lg white text-dark">
+    <a class="navbar-brand text-uppercase" href="#">budeshi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+      aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">About Us
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./views/projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <main style="margin-top: -1%;">
     <section class="jumbotron d-flex justify-content-center banner text-white">
@@ -165,61 +171,40 @@
 
   </main>
 
-  <footer class="page-footer font-small banner pt-4">
-    <div class="container-fluid text-center text-md-left">
+  <footer class="page-footer font-small teal teal lighten-3 pt-4">
+    <div class="container text-center text-md-left">
       <div class="row">
-
-        <div class="col-md-6 mt-md-0 mt-3">
-
-          <h5 class="text-uppercase">Footer Content</h5>
-
+        <div class="col-md-3">
+          <img src="./img/ppdc-logo copy.png" alt="ppdc_logo" class="footer--logo">
         </div>
-
-        <hr class="clearfix w-100 d-md-none pb-3">
-
-        <div class="col-md-3 mb-md-0 mb-3">
-
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">Link 1</a>
-            </li>
-            <li>
-              <a href="#!">Link 2</a>
-            </li>
-            <li>
-              <a href="#!">Link 3</a>
-            </li>
-            <li>
-              <a href="#!">Link 4</a>
-            </li>
-          </ul>
-
+        <div class="col-md-9">
+          <p class="text-center">
+            Budeshi is an initiative of the Public and Private Development Centre in partnership with the School of
+            Media and
+            Communication, Pan-Atlantic University and Premium Times Centre for Investigative Journalism.
+          </p>
         </div>
-
-        <div class="col-md-3 mb-md-0 mb-3">
-
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">Link 1</a>
-            </li>
-            <li>
-              <a href="#!">Link 2</a>
-            </li>
-            <li>
-              <a href="#!">Link 3</a>
-            </li>
-            <li>
-              <a href="#!">Link 4</a>
-            </li>
-          </ul>
-
-        </div>
-
       </div>
+      <hr width="200" />
+
+      <section class="container my-5 d-flex justify-content-center" style="overflow-y: scroll;">
+        <img src="./img/smc.png" alt="" class="footer--logo px-2">
+        <img src="./img/ptcij.png" alt="" class="footer--logo px-2">
+      </section>
+
+      <section class="container my-3">
+        <hr width="200" />
+        <div class="d-flex justify-content-center">
+          <ul class="list-group list-group-horizontal border p-2">
+            <span class="d-flex align-items-center text-muted pr-2">Proudly Supported By</span>
+            <li class="list-group-item p-1">
+              <img src="./img/lumintate-logo.png" alt="" class="footer--logo px-2">
+              <span class="vl" style="border-right:1px solid #555;height:max-content;"></span>
+              <img src="./img/macarthur-logo.png" alt="" class="footer--logo px-2">
+            </li>
+          </ul>
+        </div>
+      </section>
 
     </div>
 
