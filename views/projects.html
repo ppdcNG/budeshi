@@ -35,6 +35,29 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
+    <nav class="mb-1 navbar navbar-expand-lg white text-dark">
+        <a class="navbar-brand text-uppercase" href="../index.html">budeshi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+            aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <main>
         <section class="jumbotron d-flex justify-content-center banner text-white">
             <h5 class="text-uppercase">projects</h5>
@@ -56,7 +79,7 @@
                                 <input type="text" id="" class="form-control" placeholder="Year">
                             </div>
                         </div>
-        
+
                         <div class="form-row mb-4">
                             <div class="col-md-6">
                                 <input type="text" id="" class="form-control" placeholder="Contractor">
@@ -65,11 +88,11 @@
                                 <input type="text" id="" class="form-control" placeholder="Monitored">
                             </div>
                         </div>
-        
+
                         <div class="d-flex justify-content-center pb-5 row">
                             <button class="col-md-8 btn banner text-white btn-rounded">find</button>
                         </div>
-        
+
                     </form>
                 </div>
                 <div class="col-md-8">
@@ -87,15 +110,15 @@
                                             Total number of projects
                                         </h5>
                                     </div>
-            
+
                                     <!--Card content-->
                                     <div class="card-body">
                                         <h5 class="text-center">
-                                            <i class="fas fa-project-diagram fa-lg"></i> 
+                                            <i class="fas fa-project-diagram fa-lg"></i>
                                             <span>1,000</span>
                                         </h5>
                                     </div>
-            
+
                                 </div>
                                 <!-- Card -->
                             </div>
@@ -163,7 +186,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- <section class="mt-5 container">
             <div class="row">
                 <div class="col card m-1 shadow">
@@ -263,6 +286,48 @@
         <br /><br /><br />
     </main>
 
+    <footer class="page-footer font-small teal teal lighten-3 pt-4">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">
+                        Budeshi is an initiative of the Public and Private Development Centre in partnership with the
+                        School of
+                        Media and
+                        Communication, Pan-Atlantic University and Premium Times Centre for Investigative Journalism.
+                    </p>
+                </div>
+            </div>
+            <hr width="200" />
+
+            <section class="container my-5 d-flex justify-content-center" style="overflow-y: scroll;">
+                <img src="../img/ppdc-logo copy.png" alt="ppdc_logo" class="footer--logo px-2">
+                <img src="../img/smc.png" alt="" class="footer--logo px-2">
+                <img src="../img/ptcij.png" alt="" class="footer--logo px-2">
+            </section>
+
+            <section class="container my-3">
+                <hr width="200" />
+                <div class="d-flex justify-content-center">
+                    <ul class="list-group list-group-horizontal border p-2">
+                        <span class="d-flex align-items-center text-muted pr-2">Proudly Supported By</span>
+                        <li class="list-group-item p-1">
+                            <img src="../img/lumintate-logo.png" alt="" class="footer--logo px-2">
+                            <span class="vl" style="border-right:1px solid #555;height:max-content;"></span>
+                            <img src="../img/macarthur-logo.png" alt="" class="footer--logo px-2">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="footer-copyright banner text-center py-3">© 2020 Copyright:
+            <a href=""> PPDC</a>
+        </div>
+
+    </footer>
+
     <!-- Modal -->
     <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModal"
         aria-hidden="true">
@@ -284,8 +349,8 @@
                     <p><b>Nature Of Business:</b> <span>Sole Proprietorship</span></p>
                 </div>
                 <div class="modal-footer">
-                    <div class="text-center w-100 text-success"><a href="./projectDetails.html">View Project Breakdown <i
-                                class="fas fa-arrow-right"></i></a></div>
+                    <div class="text-center w-100 text-success"><a href="./projectDetails.html">View Project Breakdown
+                            <i class="fas fa-arrow-right"></i></a></div>
                 </div>
             </div>
         </div>
@@ -308,68 +373,6 @@
         AOS.init();
     </script>
 
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script>
-        // chart
-        document.addEventListener("DOMContentLoaded", function () {
-            var myChart = Highcharts.chart("container1", {
-                chart: {
-                    type: "pie"
-                },
-                title: {
-                    text: "Chart 1"
-                },
-                xAxis: {
-                    categories: ["Apples", "Bananas", "Oranges"]
-                },
-                yAxis: {
-                    title: {
-                        text: "Fruit eaten"
-                    }
-                },
-                series: [
-                    {
-                        name: "Jane",
-                        data: [1, 0, 4]
-                    },
-                    {
-                        name: "John",
-                        data: [5, 7, 3]
-                    }
-                ]
-            });
-        });
-
-        document.addEventListener("DOMContentLoaded", function () {
-            var myChart = Highcharts.chart("container2", {
-                chart: {
-                    type: "pie"
-                },
-                title: {
-                    text: "Chart 2"
-                },
-                xAxis: {
-                    categories: ["Apples", "Bananas", "Oranges"]
-                },
-                yAxis: {
-                    title: {
-                        text: "Fruit eaten"
-                    }
-                },
-                series: [
-                    {
-                        name: "Jane",
-                        data: [1, 0, 4]
-                    },
-                    {
-                        name: "John",
-                        data: [5, 7, 3]
-                    }
-                ]
-            });
-        });
-  // chart end
-    </script>
 
 </body>
 
