@@ -107,7 +107,15 @@
             <section class="container-fluid">
                 <ul class="nav nav-tabs nav-justified md-tabs indigo" id="myTabJust" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="award-tab" data-toggle="tab" href="#award" role="tab"
+                        <a class="nav-link active" id="planning-tab" data-toggle="tab" href="#planning" role="tab"
+                            aria-controls="planning-just" aria-selected="true">Planning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tender-tab" data-toggle="tab" href="#tender" role="tab"
+                            aria-controls="tender-just" aria-selected="true">Tender</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="award-tab" data-toggle="tab" href="#award" role="tab"
                             aria-controls="award-just" aria-selected="true">Award</a>
                     </li>
                     <li class="nav-item">
@@ -116,7 +124,62 @@
                     </li>
                 </ul>
                 <div class="tab-content container pt-5" id="myTabContentJust">
-                    <div class="tab-pane fade show active" id="award" role="tabpanel" aria-labelledby="award-tab">
+
+                    <div class="tab-pane fade show active" id="planning" role="tabpanel" aria-labelledby="planning-tab">
+                        <div class="row row-cols-1 row-cols-md-2">
+
+                            <div class="col mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-money-bill"></i> Budget Amount</h5>
+                                        <p class="card-text">₦1,000,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Documents</h5>
+                                        <p class="card-text"><i class="fas fa-cloud-download-alt"></i> No Documents</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="tender" role="tabpanel" aria-labelledby="tender-tab">
+                        <div class="row row-cols-1 row-cols-md-2">
+
+                            <div class="col mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Procurement Method</h5>
+                                        <p class="card-text">direct</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Procurement Category</h5>
+                                        <p class="card-text">consultingServices</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col mb-4">
+                                <h5 class="text-success">Documents:</h5>
+                                <div class="card inner-shadow p-3">
+                                    <i class="fas fa-cloud-download-alt"></i> No Documents
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="award" role="tabpanel" aria-labelledby="award-tab">
 
                         <div class="row row-cols-1 row-cols-md-2">
 
@@ -179,6 +242,7 @@
                         </div>
 
                     </div>
+
                     <div class="tab-pane fade" id="contract" role="tabpanel" aria-labelledby="contract-tab">
                         <div class="row row-cols-1 row-cols-md-2">
 
@@ -204,8 +268,8 @@
                             </div>
                         </div>
                     </div>
-                    <br/>
-                    <br/>
+                    <br />
+                    <br />
                 </div>
             </section>
         </div>
