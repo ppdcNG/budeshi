@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Visualization - Budeshi</title>
+    <title>Contact - Budeshi</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,22 +39,22 @@
         <a class="navbar-brand text-uppercase" href="../index.html">budeshi</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
             aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">
+            <span class="navbar-toggler-icon pt-2">
                 <i class="fas fa-bars"></i>
             </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home
+                    <a class="nav-link" href="../index.html">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./projects.html">Projects</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contactUs.html">Contact Us</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -63,84 +63,98 @@
     <main style="margin-top: -1%;">
         <section class="jumbotron text-center banner text-white">
             <img src="../img/budeshi-logo.png" alt="budeshi_logo" style="display: inline-block;width:6vw;" />
-            <h5 class="text-uppercase pt-3">Visualization</h5>
+            <h5 class="text-uppercase pt-3">Contact</h5>
         </section>
 
-        <section class="container d-flex justify-content-center">
-            <!-- search form -->
-            <form class="text-center border border-light pt-5 px-5" action="#!">
-                <div class="form-row mb-4">
-                    <div class="col-md-4">
-                        <input type="text" id="" class="form-control" placeholder="Entity">
-                    </div>
-                    <div class="col-md-4">
-                        <input type="text" id="" class="form-control" placeholder="State">
-                    </div>
-                    <div class="col-md-4">
-                        <input type="text" id="" class="form-control" placeholder="Year">
-                    </div>
-                </div>
-
-                <div class="form-row mb-4">
-                    <div class="col-md-6">
-                        <input type="text" id="" class="form-control" placeholder="Contractor">
-                    </div>
-                    <div class="col-md-6">
-                        <input type="text" id="" class="form-control" placeholder="Monitored">
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-center pb-5 row">
-                    <button class="col-md-4 btn btn-default btn-rounded">find</button>
-                </div>
-
-            </form>
+        <section class="container">
+            <p class="text-center w-responsive mx-auto">Do you have any questions? Please do not hesitate to
+                contact us directly and our team will be available to help you.</p>
+                <hr width="300" />
+            <p class="text-center w-responsive mx-auto mb-5">
+                Please note that concerns raised regarding projects shall be taken up with the appropriate
+                governing body. Therefore we, the PPDC, are not responsible for taking action.
+            </p>
         </section>
 
-        <section class="container border border-light p-5 mt-5">
+        <section class="container p-5 mb-5 card">
+
             <div class="row">
-                <div class="col-md-6">
-                    <form class="text-center w-75 border pt-5 px-5" action="#!">
-                        <div class="form-row mb-4">
-                            <div class="col-md-10">
-                                <input type="text" id="" class="form-control" placeholder="Search by state">
-                            </div>
-                        </div>
 
-                        <div class="form-row mb-4">
-                            <div class="col-md-10">
-                                <input type="text" id="" class="form-control" placeholder="Search by sector">
-                            </div>
-                        </div>
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" class="container border">
 
-                        <div class="form-row mb-4">
-                            <div class="col-md-10">
-                                <input type="text" id="" class="form-control" placeholder="Search by MDA">
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">Your email</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="5"
+                                        class="form-control md-textarea"></textarea>
+                                    <label for="message">Your message</label>
+                                </div>
+
                             </div>
                         </div>
+                        <!--Grid row-->
 
                     </form>
-                </div>
-                <div class="col-md-6">
-                    <div class="d-flex justify-content-center">
-                        <img src="../img/ng.svg" alt="ng_map" width="300">
+
+                    <div class="text-center text-md-left">
+                        <a class="btn banner text-white">Send</a>
                     </div>
+                    <div class="status"></div>
                 </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>House 2, Plot 622, Mercy Samuelson Estate, Karmo, Abuja</p>
+                        </li>
+
+                        <li><i class="fas fa-headset mt-4 fa-2x"></i>
+                            <p>+234 0703 874 8022</p>
+                        </li>
+
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>contact@mdbootstrap.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
             </div>
+
+
         </section>
 
-        <section class="mt-5 container">
-            <div class="row">
-                <div class="col card m-1 shadow">
-                    <div id="container1" style="height:300px;"></div>
-                </div>
-                <div class="col card m-1 shadow">
-                    <div id="container2" style="height:300px;"></div>
-                </div>
-            </div>
-        </section>
-
-        <br /><br /><br />
     </main>
 
     <footer class="page-footer font-small teal teal lighten-3 pt-4">
@@ -185,10 +199,36 @@
 
     </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center w-100 id=" projectModal">Supply Of Things</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <p><b>Contract Amount:</b> <span>1,000,000</span></p>
+                    <hr />
+                    <h6>Award</h6>
+                    <p><b>Supplier:</b> <span>SAS Int'l</span></p>
+                    <p><b>Address:</b> <span>NO. 12, Business Avenue</span></p>
+                    <p><b>Tel:</b> <span>+2341234567</span></p>
+                    <p><b>Nature Of Business:</b> <span>Sole Proprietorship</span></p>
+                </div>
+                <div class="modal-footer">
+                    <div class="text-center w-100 text-success"><a href="./projectDetails.html">View Project Breakdown
+                            <i class="fas fa-arrow-right"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- script -->
-    <script type="text/javascript" src="../js/vendor/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" charset="utf8"
-        src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" charset="utf8"
         src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/jquery.dataTables.min.js"></script>
 
@@ -204,68 +244,6 @@
         AOS.init();
     </script>
 
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script>
-        // chart
-        document.addEventListener("DOMContentLoaded", function () {
-            var myChart = Highcharts.chart("container1", {
-                chart: {
-                    type: "pie"
-                },
-                title: {
-                    text: "Chart 1"
-                },
-                xAxis: {
-                    categories: ["Apples", "Bananas", "Oranges"]
-                },
-                yAxis: {
-                    title: {
-                        text: "Fruit eaten"
-                    }
-                },
-                series: [
-                    {
-                        name: "Jane",
-                        data: [1, 0, 4]
-                    },
-                    {
-                        name: "John",
-                        data: [5, 7, 3]
-                    }
-                ]
-            });
-        });
-
-        document.addEventListener("DOMContentLoaded", function () {
-            var myChart = Highcharts.chart("container2", {
-                chart: {
-                    type: "pie"
-                },
-                title: {
-                    text: "Chart 2"
-                },
-                xAxis: {
-                    categories: ["Apples", "Bananas", "Oranges"]
-                },
-                yAxis: {
-                    title: {
-                        text: "Fruit eaten"
-                    }
-                },
-                series: [
-                    {
-                        name: "Jane",
-                        data: [1, 0, 4]
-                    },
-                    {
-                        name: "John",
-                        data: [5, 7, 3]
-                    }
-                ]
-            });
-        });
-  // chart end
-    </script>
 
 </body>
 
