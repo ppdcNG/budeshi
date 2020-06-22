@@ -201,9 +201,9 @@
             </div>
         </section> -->
 
-        <!-- modal -->
+        <!-- new modal section -->
         <section class="container">
-            <button type="button" class="btn banner text-white" data-toggle="modal" data-target="#surveyModal">
+            <button type="button" class="btn banner text-white" id="surveyModalButton">
                 Download
             </button>
 
@@ -405,6 +405,14 @@
         AOS.init();
     </script>
 
+    <!-- script to trigger modal -->
+    <script>
+        $("#surveyModalButton").click(function() {
+            setTimeout(function() {
+                $("#surveyModal").modal('show')
+            }, 1000)
+        })
+    </script>
 
 </body>
 
