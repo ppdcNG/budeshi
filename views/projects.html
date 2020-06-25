@@ -213,22 +213,64 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="suerveryModalLabel">Please fill out this short survey, while
-                                your download is in progress</h5>
+                            <h5>
+                                CREATIVE COMMON ATTRIBUTION LICENSE
+                            </h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
-                            <iframe
-                                src="https://docs.google.com/forms/d/e/1FAIpQLSdVTwM4leApnKomRo-8byffzgujP1mR7LfGREwz3jClnsAcdg/viewform?embedded=true"
-                                width="100%" height="400" frameborder="0" marginheight="0"
-                                marginwidth="0">Loading…</iframe>
+                        <div class="modal-body px-5 py-2">
+                            <p class="text-justify">
+                                Budeshi.ng and all logos, products, services or other content on www.budeshi.ng or other
+                                mobile download platforms are the intellectual property of the Public and Private
+                                Development Centre (PPDC). This work can be re-used and re-distributed, in whole or in
+                                part, for a profit or nonprofit purposes as long as the creator is appropriately
+                                credited, and any derivative shall be made available under the same, similar or a
+                                compatible license.
+                            </p>
+                            <h5 class="text-warning">DISCLAIMER</h5>
+                            <p class="text-justify">
+                                PPDC will not be responsible for any misrepresentation upon reproduction of data
+                                available on Budeshi except such reproduction has been, prior to publication, reviewed
+                                and certified by PPDC.
+                            </p>
+                            <div class="banner white-text px-2">
+                                By Downloading using this site, you agree to the terms and conditions
+                            </div>
+                            <div class="float-right">
+                                <button class="btn btn-success btn-sm float-right close" data-dismiss="modal">OK</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer p-2">
+                            <p>While waiting for your download to complete, kindly fill this short survey <a class="btn btn-sm banner white-text" data-toggle="modal" data-target="#surveyForm">Here!</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="surveyForm" tabindex="-1" role="dialog" aria-labelledby="surveyFormLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="surveyFormLabel">Please fill out this short survey, while
+                                    your download is in progress</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body px-5 py-2">
+                                <iframe
+                                    src="https://docs.google.com/forms/d/e/1FAIpQLSdVTwM4leApnKomRo-8byffzgujP1mR7LfGREwz3jClnsAcdg/viewform?embedded=true"
+                                    width="100%" height="400" frameborder="0" marginheight="0"
+                                    marginwidth="0">Loading…</iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
         <section class="mt-5 container border py-3">
             <h4 class="text-center">Tables and Comparisons</h4>
@@ -407,8 +449,8 @@
 
     <!-- script to trigger modal -->
     <script>
-        $("#surveyModalButton").click(function() {
-            setTimeout(function() {
+        $("#surveyModalButton").click(function () {
+            setTimeout(function () {
                 $("#surveyModal").modal('show')
             }, 1000)
         })
