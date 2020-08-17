@@ -1,26 +1,21 @@
 <!doctype html>
 <html class="no-js" lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Budeshi</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/mdb.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <!-- font -->
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-
-  <style>
+    <head>
+        <meta charset="utf-8">
+        <title>Budeshi</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/mdb.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+        <style>
     .modal-dialog {
       position: fixed;
       top: auto;
@@ -33,75 +28,85 @@
       background-color: rgb(216, 245, 242);
       outline: none;
     }
-  </style>
-
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-  <!--[if IE]>
+        </style>
+        <meta name="theme-color" content="#fafafa">
+    </head>
+    <body>
+        <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-
-  <nav class="mb-1 navbar navbar-expand-lg white text-dark">
-    <a class="navbar-brand text-uppercase" href="#">budeshi</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-      aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon pt-2">
-        <i class="fas fa-bars"></i>
-      </span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./views/howItWorks.html">How it Works</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./views/projects.html">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./views/contactUs.html">Contact Us</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <main style="margin-top: -1%;">
-    <section class="jumbotron d-flex justify-content-center banner text-white">
-      <img src="img/budeshi-logo.png" alt="budeshi_logo" style="display: block;width: 10vw;" />
-    </section>
-
-    <section class="text-center container">
-      <h5 class="header__text--green"><b>About</b></h5>
-      <hr class="hr--green" />
-      <div class="row d-flex justify-content-center">
-        <p class="matterhorn-black pb-5 w-75">
-          A dedicated web platform that links budget and procurement data
+        <nav class="mb-1 navbar navbar-expand-lg white text-dark">
+            <a class="navbar-brand text-uppercase" href="#">budeshi</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent-4"
+                aria-controls="navbarSupportedContent-4"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon pt-2">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./views/howItWorks.html">How it Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./views/projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./views/contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main style="margin-top: -1%;">
+            <section class="jumbotron d-flex justify-content-center banner text-white">
+                <img src="img/budeshi-logo.png" alt="budeshi_logo" style="display: block;width: 10vw;">
+            </section>
+            <section class="jumbotron warning-color text-center white-text">
+                <h4 class="font-weight-bolder">
+                    Covid-19 data from NOCOPO!
+                    <br>
+                    Search projects with the keyword <span class="bg-light rounded text-dark px-1">covid-19</span> <a class="teal-text" href="/views/projects.html">here <small>&rarr;</small></a>
+                </h4>
+            </section>
+            <section class="text-center container">
+                <h5 class="header__text--green">
+                    <b>About</b>
+                </h5>
+                <hr class="hr--green">
+                <div class="row d-flex justify-content-center">
+                    <p class="matterhorn-black pb-5 w-75">
+                        A dedicated web platform that links budget and procurement data
           to various public services using the Open Contracting Data Standards (OCDS).
           The Budeshi platform is primarily being used to demonstrate to public
           institutions the utility of using uniform data standards to publish and report
           information across stages in the procurement value chain.
-        </p>
-      </div>
-    </section>
-
-    <section class="card py-2">
-      <div class="text-center">
-        <a href="./views/projects.html" class="btn btn-default btn-rounded">find projects</a>
-      </div>
-    </section>
-
-    <section class="container my-5">
-      <div class="row">
-        <div class="col-md-6">
-          <h5 class="font-weight-bold mb-4">Process of Data Collection</h5>
-          <p class="text-justify matterhorn-black">
-            Budeshi gives you access to procurement data
+                    </p>
+                </div>
+            </section>
+            <section class="card py-2">
+                <div class="text-center">
+                    <a href="./views/projects.html" class="btn btn-default btn-rounded">find projects</a>
+                </div>
+            </section>
+            <section class="container my-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="font-weight-bold mb-4">Process of Data Collection</h5>
+                        <p class="text-justify matterhorn-black">
+                            Budeshi gives you access to procurement data
             such as budget amounts, contract amounts,
             contractor details, MDA details, project location, e.t.c
             from over 90 MDAs in Nigeria at the federal level.
@@ -109,44 +114,54 @@
             Act (2011). We make over 300 FOI requests yearly
             and update the platform with information received
             from these requests.
-          </p>
-
-        </div>
-        <div class="col-md-6">
-          <lottie-player src="https://assets8.lottiefiles.com/datafiles/7U1rGDhr3RKjEj2/data.json"
-            background="transparent" speed="1" style="width: 400px; height: 300px;" loop autoplay>
-          </lottie-player>
-        </div>
-      </div>
-    </section>
-
-    <section class="container my-5">
-      <div class="row">
-        <div class="col-md-6">
-          <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_4ejZJA.json" background="transparent"
-            speed="1" style="width: 400px; height: 300px;" loop autoplay></lottie-player>
-        </div>
-        <div class="col-md-6 pt-5">
-          <h5 class="font-weight-bold mb-4"><b>Data Processing</b></h5>
-          <p class="text-justify matterhorn-black">
-            Procurement Data is usually received from MDAs in hard
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <lottie-player
+                            src="https://assets8.lottiefiles.com/datafiles/7U1rGDhr3RKjEj2/data.json"
+                            background="transparent"
+                            speed="1"
+                            style="width: 400px; height: 300px;"
+                            loop
+                            autoplay
+                        ></lottie-player>
+                    </div>
+                </div>
+            </section>
+            <section class="container my-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <lottie-player
+                            src="https://assets10.lottiefiles.com/packages/lf20_4ejZJA.json"
+                            background="transparent"
+                            speed="1"
+                            style="width: 400px; height: 300px;"
+                            loop
+                            autoplay
+                        ></lottie-player>
+                    </div>
+                    <div class="col-md-6 pt-5">
+                        <h5 class="font-weight-bold mb-4">
+                            <b>Data Processing</b>
+                        </h5>
+                        <p class="text-justify matterhorn-black">
+                            Procurement Data is usually received from MDAs in hard
             copy files which makes it difficult for the end users
             to consume and use data effectively. Therefore we
             painstakingly convert these hard copy datasets to the
             OCDS format and make it available in different open
             and machine readable formats for effective end user
             consumption.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="container my-5">
-      <div class="row">
-        <div class="col-md-6">
-          <h5 class="font-weight-bold mb-4">What we do with Budeshi</h5>
-          <p class="text-justify matterhorn-black">
-            The OCDS is premised on the fact that we can
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="container my-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="font-weight-bold mb-4">What we do with Budeshi</h5>
+                        <p class="text-justify matterhorn-black">
+                            The OCDS is premised on the fact that we can
             prevent some of the expensive corruption
             investigations and prosecutions as well as
             inefficiencies across the procurement value
@@ -154,9 +169,9 @@
             us link various data from the budget, to
             procurement and ultimately to public services
             in a timely way
-          </p>
-          <p class="text-justify matterhorn-black">
-            Over the years different classes of users have
+                        </p>
+                        <p class="text-justify matterhorn-black">
+                            Over the years different classes of users have
             emerged, ranging from ordinary citizens who
             demand accountability from government to
             procurement monitors who monitor project
@@ -168,124 +183,138 @@
             seeking to have Open contracting adopted across
             the public service in Nigeria and beyond.
             We welcome your support in making this a reality.
-
-          </p>
-        </div>
-        <div class="col-md-6">
-          <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_meNSkq.json" background="transparent"
-            speed="1" style="width: 400px; height: 300px;" loop autoplay></lottie-player>
-        </div>
-      </div>
-    </section>
-
-    <section class="my-5">
-      <div class="row">
-        <div class="col-md-6"></div>
-        <div class="col-md-6"></div>
-      </div>
-    </section>
-
-  </main>
-
-  <section class="chat--box text-right">
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#chatModal"
-      style="position: fixed;bottom:0;right:0">
-      Hi <i class="fas fa-comment"></i>
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chatModal" aria-hidden="true">
-      <div class="modal-dialog modal-lg px-3" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="chatModalLabel">Chat</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body px-3">
-
-            <section class="chat-section">
-              <ul class="list-group container mb-5" id="messageList">
-                <li class="list-group-item text-left teal lighten-5"><i class="fas fa-angle-double-right"></i> Hi, how
-                  may I help?</li>
-              </ul>
-
-              <form class="form-container" id="messageForm">
-                <div class="form-group">
-                  <input type="text" id="message" class="form-control mb-4" placeholder="Type here">
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <lottie-player
+                            src="https://assets10.lottiefiles.com/packages/lf20_meNSkq.json"
+                            background="transparent"
+                            speed="1"
+                            style="width: 400px; height: 300px;"
+                            loop
+                            autoplay
+                        ></lottie-player>
+                    </div>
                 </div>
-
-                <button type="submit" class="btn btn-block banner text-white">Send <i
-                    class="fas fa-paper-plane"></i></button>
-              </form>
             </section>
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="page-footer font-small teal teal lighten-3 pt-4">
-    <div class="container text-center text-md-left">
-      <div class="row">
-        <div class="col-md-12">
-          <p class="text-center">
-            Budeshi is an initiative of the Public and Private Development Centre in partnership with the School of
+            <section class="my-5">
+                <div class="row">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6"></div>
+                </div>
+            </section>
+        </main>
+        <section class="chat--box text-right">
+            <button
+                type="button"
+                class="btn btn-default"
+                data-toggle="modal"
+                data-target="#chatModal"
+                style="position: fixed;bottom:0;right:0"
+            >
+                Hi
+                <i class="fas fa-comment"></i>
+            </button>
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="chatModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="chatModal"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-lg px-3" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="chatModalLabel">Chat</h5>
+                            <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                            >
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body px-3">
+                            <section class="chat-section">
+                                <ul class="list-group container mb-5" id="messageList">
+                                    <li class="list-group-item text-left teal lighten-5">
+                                        <i class="fas fa-angle-double-right"></i>
+                                        Hi, how
+                  may I help?
+                                    </li>
+                                </ul>
+                                <form class="form-container" id="messageForm">
+                                    <div class="form-group">
+                                        <input
+                                            type="text"
+                                            id="message"
+                                            class="form-control mb-4"
+                                            placeholder="Type here"
+                                        >
+                                    </div>
+                                    <button type="submit" class="btn btn-block banner text-white">Send
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </form>
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="page-footer font-small teal teal lighten-3 pt-4">
+            <div class="container text-center text-md-left">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">
+                            Budeshi is an initiative of the Public and Private Development Centre in partnership with the School of
             Media and
             Communication, Pan-Atlantic University and Premium Times Centre for Investigative Journalism.
-          </p>
-        </div>
-      </div>
-      <hr width="200" />
-
-      <section class="container my-5 d-flex justify-content-center" style="overflow-y: scroll;">
-        <img src="./img/ppdc-logo copy.png" alt="ppdc_logo" class="footer--logo px-2">
-        <img src="./img/smc.png" alt="" class="footer--logo px-2">
-        <img src="./img/ptcij.png" alt="" class="footer--logo px-2">
-      </section>
-
-      <section class="container my-3">
-        <hr width="200" />
-        <div class="d-flex justify-content-center">
-          <ul class="list-group list-group-horizontal border p-2">
-            <span class="d-flex align-items-center text-muted pr-2">Proudly Supported By</span>
-            <li class="list-group-item p-1">
-              <img src="./img/lumintate-logo.png" alt="" class="footer--logo px-2">
-              <span class="vl" style="border-right:1px solid #555;height:max-content;"></span>
-              <img src="./img/macarthur-logo.png" alt="" class="footer--logo px-2">
-            </li>
-          </ul>
-        </div>
-      </section>
-
-    </div>
-
-    <div class="footer-copyright banner text-center py-3">© 2020 Copyright:
-      <a href=""> PPDC</a>
-    </div>
-
-  </footer>
-
-
-  <!-- script -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-  <script type="text/javascript" src="./js/vendor/bootstrap.min.js"></script>
-  <script type="text/javascript" src="./js/vendor/bootstrap.min.js"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <script>
+                        </p>
+                    </div>
+                </div>
+                <hr width="200">
+                <section class="container my-5 d-flex justify-content-center" style="overflow-y: scroll;">
+                    <img src="./img/ppdc-logo copy.png" alt="ppdc_logo" class="footer--logo px-2">
+                    <img src="./img/smc.png" alt="" class="footer--logo px-2">
+                    <img src="./img/ptcij.png" alt="" class="footer--logo px-2">
+                </section>
+                <section class="container my-3">
+                    <hr width="200">
+                    <div class="d-flex justify-content-center">
+                        <ul class="list-group list-group-horizontal border p-2">
+                            <span class="d-flex align-items-center text-muted pr-2">Proudly Supported By</span>
+                            <li class="list-group-item p-1">
+                                <img src="./img/lumintate-logo.png" alt="" class="footer--logo px-2">
+                                <span class="vl" style="border-right:1px solid #555;height:max-content;"></span>
+                                <img src="./img/macarthur-logo.png" alt="" class="footer--logo px-2">
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="footer-copyright banner text-center py-3">
+                © 2020 Copyright:
+                <a href=""> PPDC</a>
+            </div>
+        </footer>
+        <!-- script -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script type="text/javascript" src="./js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/vendor/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
     AOS.init();
-  </script>
-
-  <script>
+        </script>
+        <script>
     $("#messageForm").submit(function (e) {
       e.preventDefault();
       let msg = $("#message").val();
@@ -300,8 +329,6 @@
         }, 1000)
       }
     })
-  </script>
-
-</body>
-
+        </script>
+    </body>
 </html>
